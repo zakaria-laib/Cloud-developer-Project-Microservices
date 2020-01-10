@@ -1,0 +1,15 @@
+# See the OWNERS docs: https://git.k8s.io/community/contributors/guide/owners.md
+
+approvers:
+  - xmudrii
+  - kron4eg
+  - xrstf
+  - alvaroaleman
+  - eqrx
+
+reviewers:
+  - xmudrii
+  - kron4eg
+  - xrstf
+  - alvaroaleman
+  - eqrx

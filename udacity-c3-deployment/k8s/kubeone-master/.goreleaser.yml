@@ -1,0 +1,20 @@
+project_name: kubeone
+builds:
+- ldflags:
+  - "-s -w -X github.com/kubermatic/kubeone/pkg/cmd.version={{.Version}} -X github.com/kubermatic/kubeone/pkg/cmd.commit={{.FullCommit}} -X github.com/kubermatic/kubeone/pkg/cmd.date={{.Date}}"
+  env:
+  - "CGO_ENABLED=0"
+  - "GO111MODULE=on"
+  goos:
+  - linux
+  - darwin
+  goarch:
+  - amd64
+archives:
+  - id: kubeone
+    format: zip
+    files:
+      - README.md
+      - CHANGELOG.md
+      - LICENSE
+      - examples/**/*

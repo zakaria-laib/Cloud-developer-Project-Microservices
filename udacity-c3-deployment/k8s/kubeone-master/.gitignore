@@ -1,0 +1,13 @@
+/kubeone
+.envrc
+/dist
+_build
+config.yaml
+*.tar.gz
+tf.json
+*terraform.tfstate*
+.terraform
+terraform.tfvars
+*kubeconfig
+!*kubeconfig/
+/vendor
