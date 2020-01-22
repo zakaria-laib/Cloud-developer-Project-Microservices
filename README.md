@@ -10,9 +10,8 @@ Screenshots are located in the root of the repository.
 
 Instructions: 
   - Build the images: 
-      - docker-compose -f 
-      - docker-compose-build.yaml build --parallel 
-  -Push the images: 
+      - docker-compose -f docker-compose-build.yaml build --parallel 
+  - Push the images: 
       - docker-compose -f docker-compose-build.yaml push
     
   - Create eks cluster: 
