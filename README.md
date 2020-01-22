@@ -10,13 +10,13 @@ Screenshots are located in the root of the repository.
 
 Instructions: 
   - Build the images: 
-      docker-compose -f 
-      docker-compose-build.yaml build --parallel 
+      - docker-compose -f 
+      - docker-compose-build.yaml build --parallel 
   -Push the images: 
-      docker-compose -f docker-compose-build.yaml push
+      - docker-compose -f docker-compose-build.yaml push
     
   - Create eks cluster: 
-    eksctl create cluster   --version 1.14   --region us-east-2   --node-type t3.medium   --nodes 4   --nodes-min 1   --nodes-max 5   --name udagram
+    - eksctl create cluster   --version 1.14   --region us-east-2   --node-type t3.medium   --nodes 4   --nodes-min 1   --nodes-max 5   --name udagram
 
   - Apply confiMap and secrets: 
     - kubectl apply -f env-configmap.yaml
